@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
-const MONGO_URI = 'mongodb://mongodb:27017'
-mongoose.connect(MONGO_URI);
+mongoose.connect(process.env.MONGODB_URI);
 require('../models/User')
 require('../models/Item')
 require('../models/Comment')
